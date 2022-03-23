@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="photo.css">
+    <link rel="stylesheet" href="photofactoryop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Photo2</title>
+</head>
+<body>
+  <img id="logo" src="img\photoBackground2.jpg">
+
+  <div class="nav-bar" >
+      <a class="nav" href="photofactoryop.html">HOME</a>
+      <a class="nav" href="photo.html">PHOTOS</a>
+      <a class="nav" href="faq.html">FAQ</a>
+      <a class="nav" href="test.html">TICKETS</a>
+  
+  </div>
+    </div>
+
+    <div class="box">
+          <img class="img-thumbnail" src="img/1.jpg" >
+          <img class="img-thumbnail" src="img/2.jpg" >
+          <img class="img-thumbnail" src="img/3.jpg" >
+          <img class="img-thumbnail" src="img/4.jpg" >
+          <img class="img-thumbnail" src="img/5.jpg" >
+          <img class="img-thumbnail" src="img/6.jpg">
+          <img class="img-thumbnail" src="img/7.jpg">
+          <img class="img-thumbnail" src="img/1.jpg" >
+          <img class="img-thumbnail" src="img/2.jpg" >
+          <img class="img-thumbnail" src="img/3.jpg" >
+          <img class="img-thumbnail" src="img/4.jpg" >
+          <img class="img-thumbnail" src="img/5.jpg" >
+          <img class="img-thumbnail" src="img/6.jpg">
+          <img class="img-thumbnail" src="img/7.jpg">
+    </div>
+    <div class="modal">
+      <span class="close">×</span>
+      <img class="modal-image" onclick="addIndex(1)" />
+    </div>
+    <footer>
+      <div id="footer-box">
+      <div class=""><h5>222 North College,Auburn Al.35173</h5></div>
+      <div class=""><a href="https://www.instagram.com/"><i style="font-size:36px" class="fa fa-instagram"></i></a></div>
+      <div class=""><a href="https://www.facebook.com/"><i style="font-size:36px" class="fa fa-facebook-square"></i></a></div>
+      <div class=""><a href="https://twitter.com/?lang=en"><i style="font-size:36px" class="fa fa-twitter" aria-hidden="true"></i></a></div>
+      <div class=""><h5>...@gmail.com<br> <a href="tel:5554280940">#555-428-0940</a></h5></div>
+   </div>
+  </footer>
+    <script>
+      var modalEle = document.querySelector(".modal");
+      var modalImage = document.querySelector(".modal-image");
+      Array.from(document.querySelectorAll(".img-thumbnail")).forEach(item => {
+         item.addEventListener("click", event => {
+            modalEle.style.display = "block";
+            modalImage.src = event.target.src;
+         });
+      });
+      document.querySelector(".close").addEventListener("click", () => {
+         modalEle.style.display = "none";
+      });
+
+    </script>
+
+    
+</body>
+</html>

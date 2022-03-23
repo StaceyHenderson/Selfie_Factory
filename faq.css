@@ -1,0 +1,32 @@
+body{
+    padding: 0;
+    margin: 0;
+  }
+
+@media (min-width:800px) and (max-width:1000px) {
+    .hidden{
+        margin-top:2em;
+        width: 60%;
+        display: grid;
+        padding-bottom: 0;
+    }
+
+  }
+  @media (max-width:800px)  {
+
+
+        .hidden{
+            margin-top:2em;
+            width: 70%;
+            display: grid;
+            padding-bottom: 0;
+        }
+
+      }
+      
+        
+    
+
+  
+
+  
